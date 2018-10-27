@@ -1,1 +1,1 @@
-# android_vendor_panelli
+## Vendor Tree for Motorola Moto C Plus [panelli]
