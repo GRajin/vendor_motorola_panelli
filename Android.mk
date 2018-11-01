@@ -30,17 +30,6 @@ include $(CLEAR_VARS)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-    LOCAL_SRC_FILES_32 = proprietary/vendor/lib/libion_mtk.so
-    LOCAL_MULTILIB = 32
-
-    LOCAL_MODULE = libion_mtk
-    LOCAL_MODULE_SUFFIX = .so
-
-    LOCAL_PROPRIETARY_MODULE := true
-    LOCAL_MODULE_CLASS = SHARED_LIBRARIES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
     LOCAL_SRC_FILES_32 = proprietary/vendor/lib/libratconfig.so
     LOCAL_MULTILIB = 32
 
