@@ -19,18 +19,7 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter panelli, $(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-    LOCAL_SRC_FILES_32 = proprietary/vendor/lib/libged.so
-    LOCAL_MULTILIB = 32
-
-    LOCAL_MODULE = libged
-    LOCAL_MODULE_SUFFIX = .so
-
-    LOCAL_PROPRIETARY_MODULE := true
-    LOCAL_MODULE_CLASS = SHARED_LIBRARIES
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-    LOCAL_SRC_FILES_32 = proprietary/vendor/lib/libratconfig.so
+    LOCAL_SRC_FILES_32 = vendor/lib/libratconfig.so
     LOCAL_MULTILIB = 32
 
     LOCAL_MODULE = libratconfig
