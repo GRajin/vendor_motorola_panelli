@@ -29,15 +29,4 @@ include $(CLEAR_VARS)
     LOCAL_MODULE_CLASS = SHARED_LIBRARIES
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-    LOCAL_SRC_FILES_32 = vendor/lib/libratconfig.so
-    LOCAL_MULTILIB = 32
-
-    LOCAL_MODULE = libratconfig
-    LOCAL_MODULE_SUFFIX = .so
-
-    LOCAL_PROPRIETARY_MODULE := true
-    LOCAL_MODULE_CLASS = SHARED_LIBRARIES
-include $(BUILD_PREBUILT)
-
 endif
