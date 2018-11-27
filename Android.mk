@@ -15,16 +15,3 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-
-ifneq ($(filter panelli, $(TARGET_DEVICE)),)
-
-include $(CLEAR_VARS)
-    LOCAL_SRC_FILES_32 = vendor/lib/libion_mtk.so
-    LOCAL_MULTILIB = 32
-
-    LOCAL_MODULE = libion_mtk
-    LOCAL_MODULE_SUFFIX = .so
-    LOCAL_MODULE_CLASS = SHARED_LIBRARIES
-include $(BUILD_PREBUILT)
-
-endif
